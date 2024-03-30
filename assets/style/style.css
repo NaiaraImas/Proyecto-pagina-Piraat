@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    width: 5rem;
+    padding: 0.9rem;
+    margin: 0;
+}
+.register{
+    width: 8rem;
+    height: 3rem;
+    margin-right: 1.5rem;
+}
+.register a{
+    text-decoration: none;
+    color: black;
+    background-color: bisque;
+}
+.container-index{
+    background-color: black;
+    width: 100%;
+}
+.container-indexSection{
+    color: antiquewhite;
+    font-size: larger;
+    padding: 10rem;
+    justify-content: center;
+    gap: 4rem;
+}
+.container-indexSection p{
+    width: 20rem;
+    height: 20rem;
+}
+.container-indexSection img{
+    width: 17rem;
+    height: 15rem;
+}
+/*/////////////////////////main-css////////////////////////////////////*/
+.container-main{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+.footer-index{
+    width: 100%;
+    height: 6.5rem;
+    margin-top: 0;
+}
+.footer-index button{
+    width: 15rem;
+    height: 2rem;
+    font-weight: bolder;
+    background-color: bisque;
+}
