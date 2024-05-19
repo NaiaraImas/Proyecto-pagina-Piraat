@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/logo5.ico" type="image/x-icon">
+    <title>Registrarse</title>
+</head>
+<body class="login-page">
+        <button id="buttonSession" class="backButton"><a class="" href="../../index.html">
+                <i class="bi bi-arrow-left-short"></i> Volver a Inicio
+            </a></button>
+        <div class="login-box">
+            <form id="registerForm">
+                <div class="user-box">
+                    <input class="input2" type="text" placeholder="Nombre" id="firstName" required>
+                    <label for="firstName">Nombre</label>
+                </div>
+                <div class="user-box">
+                    <input class="input2" type="text" placeholder="12345" id="lastName" required>
+                    <label for="lastName">Numero de Tarjeta</label>
+                </div>
+
+                <div class="user-box">
+                    <input autocomplete="on" placeholder="1 2 3" class="input2" type="email" id="emailRegister" required>
+                    <label for="emailRegister">Codigo de Seguridad</label>
+                </div>
+                <div class="user-box">
+                    <input placeholder="00/00" class="input2" type="password" id="passwordRegister" required>
+                    <label for="passwordRegister">Fecha de Vencimiento</label>
+                </div>
+                <div class="text-center">
+                    <a href="#" id="comparButton">
+                        Comprar
+                        <span></span>
+                    </a>
+                </div>
+            </form>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../scripts/index.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

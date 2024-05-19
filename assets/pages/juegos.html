@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home page">
+    <title>Piraat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/logo5.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="header-section">
+        <header>
+            <div class="w-100 justify-content-start">
+                <img class="logoWell" src="../images/logoPiraat-.png" alt="">
+            </div>
+            <nav class="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Juegos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contacto.html">Ayuda</a>
+                        </li>
+                        <div v-if="isLoggedIn">
+                            <button class="buttonSession">
+                                <a href="#" @click.prevent="logout" class="logIn">INGRESAR</a>
+                            </button>
+                        </div>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+        <main>
+            <section class="container top-categories">
+                <h2 class="title-categories">Descarga los mejores juegos!</h2>
+                <div class="container-categories">
+                    <div class="card-category category-Baldurs" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Baldur's Gate 3</p>
+                        <a href="../../BG3/detail-game-bg3.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-Cp" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Cyberpunk</p>
+                        <a href="../../Cyberpunk/detail-game-cbp.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-Er" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Elden Ring</p>
+                        <a href="../../Sin_comentarios/detail-game-EldenRing.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-D4" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>DiabloIV</p>
+                        <a href="../../Diablo4/detail-game-D4 V1.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-DD" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Dragons Dogma</p>
+                        <a href="../../Dragonsdogma/detail-game-ddv1.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-HD" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Helldivers 2</p>
+                        <a href="../../Helldivers2/detail-game-hd2.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-SV" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Stardew Valley</p>
+                        <a href="../../StardewValley/detail-game-sv1.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-Cod" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Call Of Duty</p>
+                        <a href="../../Sin_comentarios/detail-game-CallOfDuty.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-Fo76" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Fallout 76</p>
+                        <a href="../../Sin_comentarios/detail-game-Fallout76.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-FFXVI" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Final Fantasy XVI</p>
+                        <a href="../../Sin_comentarios/detail-game-Final Fantasy XVI.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-SkullOfBones" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Skull and Bones</p>
+                        <a href="../../Sin_comentarios/detail-game-SkullOfBones.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-Mas" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>+</p>
+                        <span>Ver Mas</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer-lista">
+                <div class="footer-contactanos">
+                    <h3>Contactanos</h3>
+                    <p>Si tenes alguna consulta o si necesitas asistencia, comunicate con nosotros!.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="./products.html">Productos</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seguinos">
+                    <h3>Seguinos</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="loFooter">
+                <img class="logoPiraatFooter" src="../images/logoPiraat-.png" alt="">
+            </div>
+            <div class="footer-bottom pt-5">
+                <p>&copy; 2024 Tienda de juegos. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+        <script src="./assets/scripts/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

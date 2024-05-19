@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/logo5.ico" type="image/x-icon">
+    <title>Registrarse</title>
+</head>
+<body class="login-page">
+        <button id="buttonSession" class="backButton"><a class="" href="../../index.html">
+                <i class="bi bi-arrow-left-short"></i> Volver a Inicio
+            </a></button>
+        <div class="login-box">
+            <form id="loginForm" class="formLogin">
+                <div class="user-box">
+                    <input type="email" autocomplete="on" placeholder="Email" class="input2" id="emailLogin" required>
+                    <label for="emailLogin">Email</label>
+                </div>
+                <div class="user-box">
+                    <input placeholder="Contraseña" class="input2" type="password" id="passwordLogin" required>
+                    <label for="passwordLogin">Contraseña</label>
+                </div>
+                <div class="text-center">
+                    <a href="#" id="loginButton">
+                        Ingresar
+                        <span></span>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a href="" id="toggleToRegister">Registrarse</a>
+                </div>
+            </form>
+        </div>
+        <div class="login-box">
+            <form id="registerForm">
+                <div class="user-box">
+                    <input class="input2" type="text" placeholder="Nombre" id="firstName" required>
+                    <label for="firstName">Nombre</label>
+                </div>
+                <div class="user-box">
+                    <input class="input2" type="text" placeholder="Apellido" id="lastName" required>
+                    <label for="lastName">Apellido</label>
+                </div>
+
+                <div class="user-box">
+                    <input autocomplete="on" placeholder="Email" class="input2" type="email" id="emailRegister" required>
+                    <label for="emailRegister">Email</label>
+                </div>
+                <div class="user-box">
+                    <input placeholder="Contraseña" class="input2" type="password" id="passwordRegister" required>
+                    <label for="passwordRegister">Contraseña</label>
+                </div>
+                <div class="text-center">
+                    <a href="#" id="registerButton">
+                        Crear Cuenta
+                        <span></span>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a href="" id="toggleToLogin"><i class="bi bi-arrow-left fs-5"></i>Volver</a>
+                </div>
+            </form>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../scripts/index.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

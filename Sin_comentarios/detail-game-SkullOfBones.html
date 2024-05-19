@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo5-.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Detail games</title>
+</head>
+<body>
+    <div class="header-section">
+        <header>
+            <nav class="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Juegos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contacto.html">Ayuda</a>
+                        </li>
+                        <div v-if="isLoggedIn">
+                            <button class="buttonSession">
+                                <a href="#" @click.prevent="logout" class="logIn">INGRESAR</a>
+                            </button>
+                        </div>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="banner-juego-SoB">
+    </div>
+    <main>
+        <section class="fondo">
+            <section class="contenedor-caratula">
+                <div class="listas-requisitos">
+                    <!-- Requisitos minimos y recomendados -->
+                    <ul>
+                        <li><h3>Requisitos minimos:</h3>
+                            <ul>
+                                <li>SO: Windows 10 </li>
+                                <li>Procesador: Intel i7 4790, AMD Ryzen 5 1600 </li>
+                                <li>Memoria: 8 GB (modo de doble canal) </li>
+                                <li>Gráficos: NVIDIA GTX 1060 (6 GB) o AMD RX 570 (8 GB) </li>
+                                <li>Almacenamiento: 65 GB en SSD</li>
+                                <li>Cuentas de inicio de sesión necesarias: Ubisoft  </li>
+                            </ul><br> 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><h3>Requisitos recomendados:</h3></li>
+                            <ul>
+                                <li>SO: Windows 10/Windows 11 </li>
+                                <li>Procesador: Intel i7 8700k, AMD Ryzen 5 3600 </li>
+                                <li>Memoria: 16 GB (modo de doble canal) </li>
+                                <li>Gráficos: NVIDIA RTX 2070 (8 GB) o AMD RX 5700XT (8 GB) </li>
+                                <li>Almacenamiento: 65 GB en SSD</li>
+                                <li>Cuentas de inicio de sesión necesarias: Ubisoft  </li>
+                            </ul>
+                    </ul>
+                </div>
+                <!-- ifrem del trailer, estan en el archivo de texto en cada carpeta de los juegos -->
+                <div class="contenedor-ifrem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m8JW8zXRUBc?si=7p5qIrm9fwpts_Ob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+                <div class="listas">
+                    <!-- reseñas y precio también estan en el mismo documento que el ifrem -->
+                    <ul>
+                        <li><h3>Reseñas generales:</h3>
+                            <ul>
+                                <li>Variadas</li>
+                                <li>Total reseñas: 4.156</li>
+                                <li>Reseñas positivas: 2.417</li>
+                            </ul>
+                        </li>  <br>
+                        <li><h3>Precio:</h3> $47.99 USD</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="detail2">
+                <!-- Detalles del juego ofrecido por los desarrolladores -->
+                <h2 class="h2-detail-game">Sobre Skull and bones</h2><br>
+                <p class="d1">
+                    Con el pretexto de aprender de los lobos de mar más aguerridos, náufragos y náufragas de todas las partes del mundo se labraron su nombre por el ingobernable océano Índico. Tenían un objetivo: derrocar a quienes estaban al mando y, con el tiempo, competir entre sí para convertirse en el cabecilla pirata más temible de todos.
+                </p> <br>
+                <h2 class="h2-detail-game">Infierno en el paraiso</h2> <br>
+                <p class="d1">El mundo de Skull and Bones es una caja de sorpresas que irás descubriendo mientras exploras los confines del océano Indico. Descubre distintas regiones, desde la costa de África hasta las Indias Orientales, cada una con su propio ecosistema.
+                    Aprende a navegar a favor del viento orientando las velas para ganar velocidad y sobrevivir entre aguas traicioneras, olas gigantes y una fauna letal.
+                </p><br>
+                <h2 class="h2-detail-game">Navega con tus amigos</h2> <br>
+                <p class="d1">Navega los oscuros y peligrosos mares, y siente la adrenalina de las diferentes amenazas al hacerles frente con enormes cañones y otras armas, ya sea en solitario o formando alianzas con tus amigos u otros jugadores con los que te topes.
+                </p><br>
+                <h2 class="h2-detail-game">Tu mundo, tus reglas</h2> <br>
+                <p class="d1">Hazte a la ingobernable mar por tu cuenta o forma grupo fácilmente con hasta 2 amigos u otros jugadores a lo largo del juego para completar contratos y conseguir recompensas que podréis repartir entre vosotros.
+                </p><br>
+            </div>
+        <div v-if="isLoggedIn">
+            <button class="buttonSession">
+                <a href="../assets/pages/pagar.html" class="logIn">COMPRAR</a>
+            </button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-lista">
+            <div class="footer-contactanos">
+                <h3>Contactanos</h3>
+                <p>Si tenes alguna consulta o si necesitas asistencia, comunicate con nosotros!.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./products.html">Productos</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-seguinos">
+                <h3>Seguinos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="loFooter">
+            <img class="logoPiraatFooter" src="../images/logoPiraat-.png" alt="">
+        </div>
+        <div class="footer-bottom pt-5">
+            <p>&copy; 2024 Tienda de juegos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

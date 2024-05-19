@@ -1,0 +1,243 @@
+.banner-juego {
+    /* Es la imagen con el nombre del juego, me gustaba más como quedaba así que escribiendo el nombre. */
+    height: 305px;
+    display: flex;
+    align-items: center;                     
+    padding: 20px;
+    background-image: url(../detail-games/Caratulas/Banner_2_1.webp);
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+    /* background-color: rgb(114, 101, 122);
+    background: radial-gradient(circle at center, #868686, #141414); */
+}
+
+/* .bg3 {
+    color: rgb(25, 2, 27);
+    flex-grow: 1;               
+    text-align: center;         
+    font-size: 48px;            
+    font-family: Arial, sans-serif; 
+} */
+
+.footer {
+    background-color: black;
+    height: 300px;
+}
+
+.fondo {
+    /* fondo de todo lo que es el body, incluye los requisitos y esa parte de arriba y todo lo que es detalles del juego abajo. */
+    background: linear-gradient(
+        45deg, /* Ángulo del gradiente */
+        #f0f0f0, 
+        #bbb5b5, 
+        #f0f0f0 
+    );
+    background-blend-mode: soft-light; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+}
+
+.contenedor-caratula {
+    /* contenedor de la parte de los requisitos, ifrem, valroación y precio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    /* background-color: rgb(114, 101, 122);
+    background: radial-gradient(circle at center, #868686, #aaa3a3); */
+}
+
+/* .caratula {
+    width: 30%;
+    background-position: center;
+    float: left;
+    padding: 10px;
+    margin-left: 115px;
+    margin-right: 10px;
+}
+
+.caratula img {
+    width: auto;         
+    height: auto;  
+    background-position: center;       
+} */
+
+.detail {
+    /* contenedor de las imagenes puestas abajo de los detalles del juego */
+    display: flex;
+    padding: 10px;
+    flex-grow: 1;
+    background-color: rgb(184, 184, 184);
+    background: radial-gradient(circle at center, #868686, #141414);            
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px
+} 
+
+/* .listas-requisitos {
+    /* estilo de los requisitos 
+    display: flex;
+    border: 2px solid rgb(119, 72, 113); 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;   
+    justify-content: center;
+    text-align: center;
+    margin-right: 25px;
+    margin-left: 25px;
+} */
+
+.listas-requisitos ul {
+    /* esto es para que no aparezcan los astericos de la lista */
+    list-style-type: none;
+}
+
+/* .listas {
+    estilo de la lista de valoraciones y precio 
+    display: flex;
+    width: 20%; 
+    border: 2px solid rgb(119, 72, 113); 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    justify-content: center;   
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px; 
+} */
+
+.listas ul {
+        /* esto es para que no aparezcan los astericos de la lista */
+    list-style-type: none;
+}
+
+.contenedor-ifrem {
+    /* estilo del ifrem */
+    /* width: 20%; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 45px; */
+    /* margin-right: 10%; */
+}
+
+.img {
+    /* estilo de las imagenes combinadas al final. Puede sacarse en otros juegos dependiendo de como sean la/s imagen/es que se agregue/n */
+    width: 200px;
+    height: 500px;
+    text-align: center;
+}
+
+.detail2 {
+    /* estilo de los detalles del juego */
+    padding: 10px;
+    flex-grow: 1;
+    /* background-color: rgb(114, 101, 122);
+    background: radial-gradient(circle at center, #868686, #aaa3a3); */
+    /* border: 2px solid black; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
+    justify-content: center;       
+    align-items: center; 
+    /* background: linear-gradient(
+        45deg,
+        #f0f0f0, 
+        #bbb5b5, 
+        #f0f0f0 
+    );
+    background-blend-mode: soft-light; 
+    border: 2px solid #ccc; 
+    border-radius: 10px;           */
+}
+
+.h2-detail-game {
+    /* estilo de los titulos que aparecen para separar los detalles */
+    text-align: center;
+    padding: auto;
+}
+
+.d1 {
+    /* estilo de los parrafos que se encuentran en la descripción del juego */
+    /* text-align: left; */
+    /* width: 72%; */
+    /* border: 2px solid black; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); */
+    padding: 10px;
+    width: 70%;              /* Ancho del 70% del contenedor */
+    margin-left: auto;       /* Centra el elemento horizontalmente */
+    margin-right: auto;      /* Centra el elemento horizontalmente */
+    text-align: center;      /* Centra el texto dentro del párrafo */
+      
+}
+
+.lista-detail {
+    /* esto es para que no aparezcan los astericos de la lista */
+    list-style-type: none;
+}
+
+/* .separador {
+    text-align: center;
+    padding: auto;
+} */
+
+
+/* Responsive */
+.listas-requisitos,
+.listas,
+.contenedor-ifrem {
+    width: 100%; 
+    margin: 0; 
+}
+
+.d1 {
+    padding: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-juego {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-juego {
+        height: 150px; 
+    }
+    .fondo {
+        padding: 10px; 
+    }
+    .contenedor-caratula {
+        flex-direction: column; 
+    }
+}
+
+.requisitos {
+    text-align: center;
+}
+
+.listas-requisitos,
+.listas {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid rgb(119, 72, 113); 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;   
+    margin-right: 25px;
+    margin-left: 25px;
+}  
+
+.listas-requisitos ul,
+.listas ul {
+    text-align: center; 
+    padding: 0; 
+}
+
+.listas-requisitos li,
+.listas li {
+    margin: 5px 0; 
+}

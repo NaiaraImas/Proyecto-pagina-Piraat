@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/Well Played!.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Soporte y Contacto</title>
+</head>
+
+<body  class="fondo">
+    <div class="header-section">
+        <header>
+            <div class="w-100 justify-content-start">
+                <img class="logoWell" src="../images/logoPiraat-.png" alt="">
+            </div>
+            <nav class="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Juegos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contacto.html">Ayuda</a>
+                        </li>
+                        <div v-if="isLoggedIn">
+                            <button class="buttonSession">
+                                <a href="#" @click.prevent="logout" class="logIn">INGRESAR</a>
+                            </button>
+                        </div>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+        <main class="formularios">
+        <div>
+            <h1 class="SoporteContacto">Soporte y Contacto</h1>
+            <div>
+                <div class="atencion-cliente">
+                    <h3>Atención al cliente<i class="bi bi-people"></i></h3>
+                    <h4>Tenes consultas o algun problema con una orden? Comunicate con nosotros durante horas habiles para una respuesta inmediata.</h4>
+                </div>
+                <div class="atencion-cliente">
+                    <h3>Servicio Técnico<i class="bi bi-tools"></i></h3>
+                    <h4>Necesitas asistencia con el funcionamiento de un producto? Habla con uno de nuestros expertos para resolver tus dudas.</h4>
+                </div>
+            </div>
+            <div class="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div>
+                    <form class="form-contacto">
+                        <label>
+                            <input required="" type="text" placeholder="" class="input">
+                            <span>Pais</span>
+                        </label>
+
+                        <label>
+                            <input required="" type="text" placeholder="" class="input">
+                            <span>Ciudad</span>
+                        </label>
+
+                        <div class="flex">
+                            <label>
+                                <input required="" placeholder="" type="text" class="input">
+                                <span>Nombre</span>
+                            </label>
+
+                            <label>
+                                <input required="" placeholder="" type="text" class="input">
+                                <span>Apellido</span>
+                            </label>
+                        </div>
+
+                        <label>
+                            <input required="" placeholder="" type="email" class="input">
+                            <span>Email</span>
+                        </label>
+
+                        <label>
+                            <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+                            <span>Razón por la que queres contactarnos</span>
+                        </label>
+
+                        <button class="fancy" href="#">
+                            <span class="top-key"></span>
+                            <span class="text">Submit</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="w-25 container">
+                    <div class="border border-1 p-3 m-2 mapsSection">
+                        <h5>Comunicate con Atención al cliente<i class="bi bi-telephone-outbound fs-4"></i></h5>
+                        <h6>Si tenes una duda o consulta urgente respecto a tu orden, comunicate con nosotros durante horas habiles para una respuesta inmediata.</h6>
+                        <p>Lunes-Viernes 8 a.m.-5 p.m. GMT-3</p>
+                        <a href="tel:+1139145523" class="text-decoration-none text-black fw-bolder">1139145523</a>
+                    </div>
+                    <div class="border border-1 p-2 m-2 mapsSection">
+                        <h5>Comunicate con Servicio Tecnico<i class="bi bi-telephone-outbound fs-4"></i></h5>
+                        <h6>Necesitas asistencia con el funcionamiento de un producto? Habla con uno de nuestros expertos para resolver tus dudas.</h6>
+                        <p>Lunes-Viernes 8 a.m.-5 p.m. GMT-3</p>
+                        <a href="tel:+1139145523" class="text-decoration-none text-black fw-bolder">1139145523</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        </main>
+        <footer class="footer">
+            <div class="footer-lista">
+                <div class="footer-contactanos">
+                    <h3>Contactanos</h3>
+                    <p>Si tenes alguna consulta o si necesitas asistencia, comunicate con nosotros!.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="./products.html">Productos</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seguinos">
+                    <h3>Seguinos</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="loFooter">
+                <img class="logoPiraatFooter" src="../images/logoPiraat-.png" alt="">
+            </div>
+            <div class="footer-bottom pt-5">
+                <p>&copy; 2024 Tienda de juegos. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/help.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

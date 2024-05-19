@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo5-.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Detail games</title>
+</head>
+<body>
+    <div class="header-section">
+        <header>
+            <nav class="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Juegos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contacto.html">Ayuda</a>
+                        </li>
+                        <div v-if="isLoggedIn">
+                            <button class="buttonSession">
+                                <a href="#" @click.prevent="logout" class="logIn">INGRESAR</a>
+                            </button>
+                        </div>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="banner-juego-Er">
+    </div>
+    <main>
+        <section class="fondo">
+            <section class="contenedor-caratula">
+                <div class="listas-requisitos">
+                    <!-- Requisitos minimos y recomendados -->
+                    <ul>
+                        <li><h3>Requisitos minimos:</h3>
+                            <ul>
+                               <li> Requiere un procesador y un sistema operativo de 64 bits </li>
+                               <li> SO: Windows 10 </li>
+                               <li> Procesador: INTEL CORE I5-8400 or AMD RYZEN 3 3300X </li>
+                               <li> Memoria: 12 GB de RAM </li>
+                               <li> Gráficos: NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB </li>
+                               <li> DirectX: Versión 12 </li>
+                               <li> Almacenamiento: 60 GB de espacio disponible </li>
+                               <li> Tarjeta de sonido: Windows Compatible Audio Device </li>
+                               <li> Notas adicionales: </li>
+                            </ul><br> 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><h3>Requisitos recomendados:</h3></li>
+                            <ul>
+                               <li> un procesador y un sistema operativo de 64 bits</li>
+                               <li> SO: Windows 10/11 </li>
+                               <li> Procesador: INTEL CORE I7-8700K or AMD RYZEN 5 3600X </li>
+                               <li>Memoria: 16 GB de RAM </li>
+                               <li>Gráficos: NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB </li>
+                               <li>DirectX: Versión 12 </li>
+                               <li>Almacenamiento: 60 GB de espacio disponible </li>
+                               <li>Tarjeta de sonido: Windows Compatible Audio Device </li>
+                               <li>Notas adicionales:</li>
+                            </ul>
+                    </ul>
+                </div>
+                <!-- ifrem del trailer, estan en el archivo de texto en cada carpeta de los juegos -->
+                <div class="contenedor-ifrem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AKXiKBnzpBQ?si=bPTqM6amZAAoZVrJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+                <div class="listas">
+                    <!-- reseñas y precio también estan en el mismo documento que el ifrem -->
+                    <ul>
+                        <li><h3>Reseñas generales:</h3>
+                            <ul>
+                                <li>Muy positivas</li>
+                                <li>Total reseñas: 806915</li>
+                                <li>Reseñas positivas: 748678</li></li>
+                        
+                            </ul>
+                        </li>  <br>
+                        <li><h3>Precio:</h3> $47.99 USD</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="detail2">
+                <!-- Detalles del juego ofrecido por los desarrolladores -->
+                <h2 class="h2-detail-game">Sobre Elden's ring</h2><br>
+                <p class="d1">
+                    Recorre las Tierras Intermedias, un nuevo mundo de fantasía ideado por Hidetaka Miyazaki, creador de la exitosa serie de videojuegos DARK SOULS, y por George R. R. Martin, autor de Canción de hielo y fuego, la serie de fantasía superventas según The New York Times. <br>
+                    Desvela los misterios del poder del Círculo de Elden. Enfréntate a criaturas temibles y conoce a adversarios con pasados tumultuosos y personajes con sus propias motivaciones para ayudarte a avanzar o complicarte las cosas. 
+                </p> <br>
+                <h2 class="h2-detail-game">Explora el mundo de las Tierras Intermedias</h2> <br>
+                <p class="d1">
+                    ELDEN RING ofrece vastos parajes de fantasía y sombrías e intricadas mazmorras que están conectadas de forma fluida y sin interrupciones. <br>
+                    Recorre este impresionante mundo a pie o a caballo, en solitario u online con otros jugadores. Sumérgete en las verdes llanuras, en los pantanos agobiantes, en las montañas tortuosas, en unos castillos que no auguran nada bueno y en otros parajes majestuosos. Todo ello, a una escala nunca antes vista en un juego de FromSoftware. <br>
+                </p><br>
+                <h2 class="h2-detail-game">Un sistema de juego que definirá el género</h2><br>
+                <p class="d1">
+                    Crea a tu propio personaje en este refinado juego de rol y acción de FromSoftware y define tu estilo de juego a partir del amplio abanico de armas, poderes mágicos y habilidades que encontrarás a lo largo y ancho del mundo.<br>
+                    Ve de cabeza al combate, usa el sigilo para acabar con los enemigos uno a uno o pide ayuda a tus aliados. Tendrás muchas opciones a tu disposición, tanto a la hora de explorar como de saltar al combate. 
+                </p><br>
+                <div v-if="isLoggedIn">
+                    <button class="buttonSession">
+                        <a href="../assets/pages/pagar.html" class="logIn">COMPRAR</a>
+                    </button>
+                </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-lista">
+            <div class="footer-contactanos">
+                <h3>Contactanos</h3>
+                <p>Si tenes alguna consulta o si necesitas asistencia, comunicate con nosotros!.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./products.html">Productos</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-seguinos">
+                <h3>Seguinos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="loFooter">
+            <img class="logoPiraatFooter" src="../images/logoPiraat-.png" alt="">
+        </div>
+        <div class="footer-bottom pt-5">
+            <p>&copy; 2024 Tienda de juegos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

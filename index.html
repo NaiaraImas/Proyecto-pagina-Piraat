@@ -1,52 +1,172 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="esp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <meta name="description" content="home page">
+    <title>Piraat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/logo5.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <title>DnD</title>
 </head>
+
 <body>
-    <header>
-        <div>
-            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-                <div class="bg-dark p-4">
-                  <h5 class="text-body-emphasis h4">Collapsed content</h5>
-                  <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+    <div class="layout">
+        <div class="header-section">
+            <header>
+                <div>
+                    <img class="logoWell" src="./assets/images/logoPiraat-.png" alt="">
                 </div>
-            </div>
-              <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-                <img src="" alt="Logo">
-                <button class="register">
-                    <p class="visually-hidden">iniciar sesion</p>
-                    <a href="./assets/pages/main.html">Registrarse</a>
-                </button>
-              </nav>
+                <nav class="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-white"></span>
+                    </button>
+                    <div class="">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./assets/pages/juegos.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Juegos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./assets/pages/contacto.html">Ayuda</a>
+                            </li>
+                            <div v-if="isLoggedIn">
+                                <button class="buttonSession">
+                                    <a href="./assets/pages/login.html" @click.prevent="logout" class="logIn">INGRESAR</a>
+                                </button>
+                            </div>
+                        </ul>
+                </nav>
+            </header>
         </div>
-    </header>
-    <main class="container-index">
-        <section class="container-indexSection d-flex flex-wrap align-items-center">
-            <div class="d-flex flex-wrap gap-5">
-                <img src="./assets/images/dados.jpg" alt="primera imagen">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quod sunt animi fugit nostrum esse dicta id laboriosam distinctio maxime deleniti consequatur, eos eum ipsa cumque inventore nulla incidunt magnam.</p>
+        <main>
+            <section class="banner">
+                <div class="carrusel">
+                    <div class="carrusel-contenedor">
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/banner.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/CODMW.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/cp.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/diabloIV.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/dd2.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/elden.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/fallout76.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/ffXVI.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/Helldivers2.jpg');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/sb.png');"></div>
+                        <div class="carrusel-item" style="background-image: url('./assets/BANNER/stardewv.jpg');"></div>
+                    </div>
+                </div>
+            </section>
+            <!--categorias-->
+            <section class="container top-categories">
+                <h2 class="title-categories">Los mas jugados!</h2>
+                <div class="container-categories">
+                    <div class="card-category category-Baldurs" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Baldur's Gate 3</p>
+                        <a href="./BG3/detail-game-bg3.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-Cp" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Cyberpunk</p>
+                        <a href="./Cyberpunk/detail-game-cbp.html"><span>Ver Mas</span></a>
+                    </div>
+                    <div class="card-category category-Er" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <p>Elden Ring</p>
+                        <span>Ver Mas</span>
+                    </div>
+                </div>
+            </section>
+            <section class="container container-features" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card-feature p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                        <path
+                            d="M192 93.7C192 59.5 221 0 256 0c36 0 64 59.5 64 93.7l0 66.3L497.8 278.5c8.9 5.9 14.2 15.9 14.2 26.6v56.7c0 10.9-10.7 18.6-21.1 15.2L320 320v80l57.6 43.2c4 3 6.4 7.8 6.4 12.8v42c0 7.8-6.3 14-14 14c-1.3 0-2.6-.2-3.9-.5L256 480 145.9 511.5c-1.3 .4-2.6 .5-3.9 .5c-7.8 0-14-6.3-14-14V456c0-5 2.4-9.8 6.4-12.8L192 400V320L21.1 377C10.7 380.4 0 372.7 0 361.8V305.1c0-10.7 5.3-20.7 14.2-26.6L192 160V93.7z" />
+                    </svg>
+                    <div class="feature-content">
+                        <span>Compra desde cualquier parte del mundo</span>
+                        <p>En todo momento en todo lugar</p>
+                    </div>
+                </div>
+                <div class="card-feature p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                        <path
+                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                    </svg>
+                    <div class="feature-content">
+                        <span>Garantia Piraat</span>
+                        <p>100% devolucion garantizada</p>
+                    </div>
+                </div>
+                <div class="card-feature p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                        <path
+                            d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z" />
+                    </svg>
+                    <div class="feature-content">
+                        <span>Tarjetas de regalo</span>
+                        <p>Ofrece bonus especiales de regalo</p>
+                    </div>
+                </div>
+                <div class="card-feature p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                        <path
+                            d="M256 48C141.1 48 48 141.1 48 256v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V256C0 114.6 114.6 0 256 0S512 114.6 512 256V400.1c0 48.6-39.4 88-88.1 88L313.6 488c-8.3 14.3-23.8 24-41.6 24H240c-26.5 0-48-21.5-48-48s21.5-48 48-48h32c17.8 0 33.3 9.7 41.6 24l110.4 .1c22.1 0 40-17.9 40-40V256c0-114.9-93.1-208-208-208zM144 208h16c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H144c-35.3 0-64-28.7-64-64V272c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64v48c0 35.3-28.7 64-64 64H352c-17.7 0-32-14.3-32-32V240c0-17.7 14.3-32 32-32h16z" />
+                    </svg>
+                    <div class="feature-content">
+                        <span>Atencion al cliente 24/7</span>
+                        <p>Recibimos tu consulta 24/7 al 1234-567</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-lista">
+                <div class="footer-contactanos">
+                    <h3>Contactanos</h3>
+                    <p>Si tenes alguna consulta o si necesitas asistencia, comunicate con nosotros!.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="./products.html">Productos</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seguinos">
+                    <h3>Seguinos</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="d-flex flex-wrap gap-5">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ducimus neque minus, animi, debitis deserunt facilis sed tenetur facere cupiditate ipsum fugiat! Architecto tenetur ex quo possimus unde officia vero.</p>
-                <img src="./assets/images/DragonAzul.jpg" alt="">
+            <div class="loFooter">
+                <img class="logoPiraatFooter" src="./assets/images/logoPiraat-.png" alt="">
             </div>
-        </section>
-    </main>
-    <footer class="footer-index d-flex flex-wrap justify-content-between align-items-center border-top p-3 gap-5">
-        <button class="p-0"><p>FA</p></button>
-        <button class="p-0"><p>AYUDA</p></button>
-        <button class="p-0"><p>contactanos</p></button>
-        <button class="p-0"><p>terminos y condiciones</p></button>
-    </footer>
+            <div class="footer-bottom pt-5">
+                <p>&copy; 2024 Tienda de juegos. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

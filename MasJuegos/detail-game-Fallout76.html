@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo5-.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Detail games</title>
+</head>
+<body>
+    <div class="header-section">
+        <header>
+            <nav class="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Juegos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contacto.html">Ayuda</a>
+                        </li>
+                        <div v-if="isLoggedIn">
+                            <button class="buttonSession">
+                                <a href="#" @click.prevent="logout" class="logIn">INGRESAR</a>
+                            </button>
+                        </div>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="banner-juego-Fo">
+    </div>
+    <main>
+        <section class="fondo">
+            <section class="contenedor-caratula">
+            <!-- <div class="caratula"> 
+                <img src="./Caratulas/BG3.png" alt="BG3" class="banner">
+            </div> -->
+                <div class="listas-requisitos">
+                    <!-- Requisitos minimos y recomendados sacados de steam -->
+                    <ul>
+                        <li><h3>Requisitos minimos:</h3>
+                            <ul>
+                                <li>Requiere un procesador y un sistema operativo de 64 bits</li>
+                                <li>SO *: Windows 8.1/10 (64-bit versions)
+                                <li>Procesador: Intel Core i5-6600k 3.5 GHz /AMD Ryzen 3 1300X 3.5 GHz or equivalent
+                                <li>Memoria: 8 GB de RAM
+                                <li>Gráficos: NVIDIA GTX 780 3GB /AMD Radeon R9 285 2GB or equivalent
+                                <li>Red: Conexión de banda ancha a Internet
+                                <li>Almacenamiento: 96 GB de espacio disponible
+                                <li>* A partir del 1 de enero de 2024, el cliente de Steam solo será compatible con Windows 10 y versiones posteriores.</li>
+                            </ul><br> 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><h3>Requisitos recomendados:</h3></li>
+                            <ul>
+                                <li>Requiere un procesador y un sistema operativo de 64 bits</li>
+                                <li>SO *: Windows 8.1/10 (64-bit versions)</li>
+                                <li>Procesador: Intel Core i7-4790 3.6 GHz /AMD Ryzen 5 1500X 3.5 GHz</li>
+                                <li>Memoria: 8 GB de RAM</li>
+                                <li>Gráficos: NVIDIA GTX 970 4GB /AMD R9 290X 4GB</li>
+                                <li>Red: Conexión de banda ancha a Internet</li>
+                                <li>Almacenamiento: 96 GB de espacio disponible</li>
+                            </ul>
+                    </ul>
+                </div>
+                <!-- ifrem del trailer, estan en el archivo de texto en cada carpeta de los juegos -->
+                <div class="contenedor-ifrem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M9FGaan35s0?si=WWRXO_Vp38spOtiB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+                <div class="listas">
+                    <!-- reseñas y precio también estan en el mismo documento que el ifrem -->
+                    <ul>
+                        <li><h3>Reseñas generales:</h3>
+                            <ul>
+                                <li>Muy positivas</li>
+                                <li>Total reseñas: 348.262</li>
+                                <li>Reseñas positivas: 288.244</li></li>
+                            </ul>
+                        </li>  <br>
+                        <li><h3>Precio:</h3> $11.99 USD</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="detail2">
+                <!-- Detalles del juego ofrecido por los desarrolladores, lo saque de steam -->
+                <h2 class="h2-detail-game">Sobre Fallout 76</h2><br>
+                <p class="d1">
+                    Bethesda Game Studios, los galardonados creadores de Skyrim y Fallout 4, te dan la bienvenida a Fallout 76. Veinticinco años después de la caída de las bombas, saldrás junto a los demás moradores del refugio (elegidos de entre lo mejor de la nación) a los Estados Unidos posnucleares el Día de la Recuperación de 2102. Adéntrate en el Yermo solo o en equipo y explora, completa misiones, construye y supera las amenazas más grandes del nuevo mundo. Explora un amplio Yermo devastado por el conflicto nuclear en este juego multijugador de mundo abierto que completa la historia de Fallout. Experimenta el mundo más grande y dinámico jamás creado para este legendario universo.
+                <h2 class="h2-detail-game">Cadenas de misiones inmersivas y personajes interesantes</h2><br>
+                <p class="d1">
+                    Descubre los secretos de Virginia Occidental mientras completas la compleja misión principal, que comienza en el momento en que abandonas el Refugio 76. Haz amigos y enemigos entre los vecinos que han venido a reconstruir el mundo y vive Appalachia a través de los ojos de sus habitantes.
+                </p><br>
+                <h2 class="h2-detail-game">Tablero De S.c.o.r.e. De La Temporada </h2><br>
+                <p class="d1">
+                    Ve avanzando a lo largo de cada temporada para completar desafíos por tiempo limitado y desbloquear una serie de recompensas totalmente gratuitas, como consumibles, objetos para el C.A.M.P. y más.</p> <br>    
+                </p> <br>
+                <h2 class="h2-detail-game">Juego de rol multijugador </h2><br>
+                <p class="d1">
+                    Aprovecha el sistema de S.P.E.C.I.A.L. para crear tu personaje y labrarte una reputación en un Yermo que cuenta con cientos de ubicaciones por descubrir.</p> <br>    
+                </p> <br>
+                <h2 class="h2-detail-game">Montaña esplendorosa </h2><br>
+                <p class="d1">
+                    La historia se desarrolla a través del mundo de Fallout 76, que cuenta con seis regiones de Virginia Occidental muy diferentes entre sí. Desde los bosques de Appalachia hasta las peligrosas llanuras escarlata del pantano de Cranberry, cada zona plantea sus propios riesgos y recompensas.</p> <br>    
+                </p> <br>
+                <h2 class="h2-detail-game">Un nuevo sueño americano </h2><br>
+                <p class="d1">
+                    Emplea el nuevo “Centro Ambulante de Montaje y Planificación”, el C.A.M.P., para construir y fabricar objetos en cualquier rincón del mundo. El C.A.M.P. te ofrecerá refugio, provisiones y seguridad en un mundo donde nunca están de más. También podrás establecer un lugar en el que comerciar con otros sobrevivientes del Mundo De Fallout.  
+                </p> <br>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>

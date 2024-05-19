@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo5-.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Detail games</title>
+</head>
+<body>
+    <div class="header-section">
+        <header>
+            <nav class="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Juegos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contacto.html">Ayuda</a>
+                        </li>
+                        <div v-if="isLoggedIn">
+                            <button class="buttonSession">
+                                <a href="#" @click.prevent="logout" class="logIn">INGRESAR</a>
+                            </button>
+                        </div>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="banner-juego-hd2">
+    </div>
+    <main>
+        <section class="fondo">
+            <section class="contenedor-caratula">
+            <!-- <div class="caratula"> 
+                <img src="./Caratulas/BG3.png" alt="BG3" class="banner">
+            </div> -->
+                <div class="listas-requisitos">
+                    <!-- Requisitos minimos y recomendados sacados de steam -->
+                    <ul class="requisitos">
+                        <li><h3>Requisitos minimos:</h3>
+                            <ul>
+                                <li>Requiere un procesador y un sistema operativo de 64 bits</li>
+                                <li>SO: Windows 10 64-bit</li>
+                                <li>Procesador: Intel Core i7-4790K or AMD Ryzen 5 1500X</li>
+                                <li>Memoria: 8 GB de RAM</li>
+                                <li>Gráficos: NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 470</li>
+                                <li>DirectX: Versión 11</li>
+                                <li>Almacenamiento: 100 GB de espacio disponible</li>
+                                <li>Notas adicionales: SSD No requerido</li>
+                            </ul><br>
+                        </li>
+                    
+                    </ul>
+                    <ul class="requisitos">
+                        <li><h3>Requisitos recomendados:</h3></li>
+                            <ul>
+                                <li>Requiere un procesador y un sistema operativo de 64 bits</li>
+                                <li>SO: Windows 10 64-bit</li>
+                                <li>Procesador: Intel Core i7-9700K or AMD Ryzen 7 3700X</li>
+                                <li>Memoria: 16 GB de RAM</li>
+                                <li>Gráficos: NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT</li>
+                                <li>DirectX: Versión 11</li>
+                                <li>Almacenamiento: 100 GB de espacio disponible</li>
+                                <li>Notas adicionales: SSD Recomendado</li>
+                            </ul>
+                    </ul>
+                </div>
+                <!-- ifrem del trailer, estan en el archivo de texto en cada carpeta de los juegos -->
+                <div class="contenedor-ifrem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oD3pxbG9YYI?si=Y0CySo5jarMkyQqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+                <div class="listas">
+                    <!-- reseñas y precio también estan en el mismo documento que el ifrem -->
+                    <ul class="reseña">
+                        <li><h3>Reseñas generales:</h3>
+                            <ul>
+                                <li>Extremadamente positivas</li>
+                                <li>Total reseñas:418.052</li>
+                                <li>Reseñas positivas:358.527</li>
+                        
+                            </ul>
+                        </li>  <br>
+                        <li><h3>Precio:</h3> $39.99 USD</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="detail2">
+                <!-- Detalles del juego ofrecido por los desarrolladores, lo saque de steam -->
+                <h2 class="h2-detail-game">Sobre Helldivers 2</h2><br>
+                <p class="d1">
+                Libertad. Paz. Democracia.<br>
+                Como habitante de Supertierra, estos son tus derechos. Los pilares fundamentales de nuestra civilización.<br>
+                De nuestra existencia.
+                </p> <br>
+                <h2 class="h2-detail-game">Pero la guerra continúa. Y todo vuelve a estar amenazado</h2> <br>
+                <p class="d1">Únete a la mejor fuerza militar de la galaxia y haz que este sea un lugar seguro y libre donde vivir.
+                </p><br>
+                <h2 class="h2-detail-game">La última línea de ataque de la galaxia</h2><br>
+                <p class="d1">
+                    Alístate en los Helldivers y únete a la lucha por la libertad en una galaxia hostil en este juego de disparos en tercera persona rápido, frenético y feroz. 
+                </p><br>
+                <h2 class="h2-detail-game">Aviso de Salud</h2><br>
+                <p class="d1">
+                    Advertencia: Si Tienes Antecedentes De Epilepsia O Convulsiones, Consulta A Tu Médico Antes De Usar El Producto <br>
+                    Ciertos Patrones Pueden Provocar Convulsiones En Personas Sin Antecedentes. Antes De Usar El Producto, Lee Las Advertencias De Seguridad Y Salud Para Obtener más informacion</p> <br>
+            </div>
+            <div v-if="isLoggedIn">
+                <button class="buttonSession">
+                    <a href="../assets/pages/pagar.html" class="logIn">COMPRAR</a>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-lista">
+            <div class="footer-contactanos">
+                <h3>Contactanos</h3>
+                <p>Si tenes alguna consulta o si necesitas asistencia, comunicate con nosotros!.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./products.html">Productos</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-seguinos">
+                <h3>Seguinos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="loFooter">
+            <img class="logoPiraatFooter" src="../images/logoPiraat-.png" alt="">
+        </div>
+        <div class="footer-bottom pt-5">
+            <p>&copy; 2024 Tienda de juegos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
