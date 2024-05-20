@@ -889,7 +889,7 @@ h1 {
 }
 .category-D4{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Diablo4/Caratulas/DiabloIV.png);
+  url(../Caratulas/DiabloIV.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -898,7 +898,7 @@ transition: transform .5s ease;
 }
 .category-DD{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Dragonsdogma/Caratulas/banner-dd2-resized.jpg);
+  url(../Caratulas/DD2.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -907,7 +907,7 @@ transition: transform .5s ease;
 }
 .category-HD{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Helldivers2/Caratulas/banner-hd-resized.jpg);
+  url(../Caratulas/HelldiversII.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -916,16 +916,17 @@ transition: transform .5s ease;
 }
 .category-SV{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../StardewValley/Caratulas/Stardew.png);
+  url(../Caratulas/Stardew.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 overflow: hidden;
 transition: transform .5s ease;
 }
+
 .category-Cp{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Cyberpunk/Caratulas/Cyberpunk.png);
+  url(../Caratulas/Cyberpunk.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -934,7 +935,7 @@ transition: transform .5s ease;
 }
 .category-Cod{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Sin_comentarios/Caratulas/CoDMW.png);
+  url(../Caratulas/COD_Banner.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -943,7 +944,7 @@ transition: transform .5s ease;
 }
 .category-Fo76{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Sin_comentarios/Caratulas/fallout76.png);
+  url(../Caratulas/fallout76Banner.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -952,7 +953,7 @@ transition: transform .5s ease;
 }
 .category-FFXVI{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Sin_comentarios/Caratulas/FFXVI.png);
+  url(../Caratulas/FinalFantasyBanner.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -961,7 +962,7 @@ transition: transform .5s ease;
 }
 .category-SkullOfBones{
   background-image: linear-gradient(#00000080, #00000080),
-  url(../../Sin_comentarios/Caratulas/SB.png);
+  url(../Caratulas/SkullandBonesBanner.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -1275,105 +1276,6 @@ transition: transform .5s ease;
   letter-spacing: 1px;
   font-weight: normal;
 }
-
-/* 
-.card {
-    width: 220px;
-    height: 321px;
-    background: #fff;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
-    transition: all 0.3s ease-out;
-    text-decoration: none;
- 
-}
-.text-card{
-    font-family: var(--text-title);
-    font-size: 16px;
-    text-align: center;
-}
-
-.card:hover {
-    transform: translateY(-5px) scale(1.005) translateZ(0);
-    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11)
-     
-}
-
-.card:hover .overlay {
-    transform: scale(4) translateZ(0);
-}
-
-.card:hover .circle {
-    border-color: var(--bg-color-light);
-    background: var(--bg-color);
-}
-
-.card:hover .circle:after {
-    background: var(--bg-color-light);
-}
-
-.card:hover p {
-    color: var(--text-color-hover);
-}
-
-.card p {
-    font-size: 17px;
-    color: #4c5656;
-    margin-top: 30px;
-    z-index: 1000;
-    transition: color 0.3s ease-out;
-}
-
-.circle {
-    width: 131px;
-    height: 131px;
-    border-radius: 50%;
-    background: #fff;
-    border: 2px solid var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s ease-out;
-}
-
-.circle:after {
-    content: "";
-    width: 118px;
-    height: 118px;
-    display: block;
-    position: absolute;
-    background: var(--bg-color);
-    border-radius: 50%;
-    top: 5px;
-    left: 5px;
-    transition: opacity 0.3s ease-out;
-}
-
-.circle svg {
-    z-index: 10000;
-    transform: translateZ(0);
-}
-
-.overlay {
-    width: 118px;
-    position: absolute;
-    height: 118px;
-    border-radius: 50%;
-    background: var(--bg-color);
-    top: 20px;
-    left: 45px;
-    z-index: 0;
-    transition: transform 0.3s ease-out;
-} */
-
 
 /*button categories*/
 .button-categories {
@@ -2198,7 +2100,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../BG3/Caratulas/Banner_2_1.webp);
+  background-image: url(../BANNER/Banner_2_1.webp);
   background-repeat: no-repeat;
   background-position:inherit; 
   background-size: cover;
@@ -2208,17 +2110,18 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Sin_comentarios/Caratulas/COD_Banner.jpg);
+  background-image: url(../BANNER/COD_Banner.jpg);
   background-repeat: no-repeat;
   background-position:inherit; 
   background-size: cover;
 }
+
 .banner-juego-Er{
   height: 505px;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Sin_comentarios/Caratulas/EldenRingBanner.jpg);
+  background-image: url(../BANNER/elden.png);
   background-repeat: no-repeat;
   background-position:inherit; 
   background-size: cover;
@@ -2228,7 +2131,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Sin_comentarios/Caratulas/fallout76Banner.jpg);
+  background-image: url(../BANNER/fallout76.png);
   background-repeat: no-repeat;
   background-position:inherit; 
   background-size: cover;
@@ -2238,7 +2141,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Sin_comentarios/Caratulas/SkullandBonesBanner.jpg);
+  background-image: url(../BANNER/SkullandBonesBanner.jpg);
   background-repeat: no-repeat;
   background-position:inherit; 
   background-size: cover;
@@ -2248,7 +2151,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Sin_comentarios/Caratulas/FinalFantasyBanner.jpg);
+  background-image: url(../BANNER/FinalFantasyBanner.jpg);
   background-repeat: no-repeat;
   background-position:inherit; 
   background-size: cover;
@@ -2258,7 +2161,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Cyberpunk/Caratulas/Cyber-Banner-resized.jpg);
+  background-image: url(../BANNER/Cyber-Banner-resized.jpg);
   background-repeat: no-repeat;
   background-position:center; 
   background-size: cover;
@@ -2268,7 +2171,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Diablo4/Caratulas/Banner-Diabloiv-Resized.jpg);
+  background-image: url(../BANNER/Banner-Diabloiv-Resized.jpg);
   background-repeat: no-repeat;
   background-position:inherit;
   background-size: cover;
@@ -2278,7 +2181,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Dragonsdogma/Caratulas/banner-dd2-resized.jpg);
+  background-image: url(../BANNER/dd2.jpg);
   background-repeat: no-repeat;
   background-position:inherit;
   background-size: cover;
@@ -2288,7 +2191,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../Helldivers2/Caratulas/banner-hd-resized.jpg);
+  background-image: url(../BANNER/banner-hd-resized.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
@@ -2298,7 +2201,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../StardewValley/Caratulas/banner-sw-resized.jpg);
+  background-image: url(../BANNER/banner-sw-resized.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
@@ -2308,7 +2211,7 @@ transition: transform .5s ease;
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(../../MasJuegos/Caratulas/COD_Banner.jpg);
+  background-image: url(../BANNER/COD_Banner.jpg);
   background-repeat: no-repeat;
   background-position:inherit;
   background-size: cover;
