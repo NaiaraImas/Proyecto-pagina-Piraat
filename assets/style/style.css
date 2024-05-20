@@ -2304,25 +2304,6 @@ transition: transform .5s ease;
 }
 
 /* Responsive */
-@media (max-width: 767px) {
-  .navbar-toggler {
-      display: block;
-      text-align: center;
-  }
-  .collapse.navbar-collapse {
-      display: none;
-  }
-  .collapse.navbar-collapse.show {
-      display: block;
-  }
-  .navbar-nav {
-      flex-direction: column;
-      align-items: center;
-  }
-  .navbar-nav .nav-item {
-      margin-bottom: 10px;
-  }
-}
 
 .listas-requisitos,
 .listas,
