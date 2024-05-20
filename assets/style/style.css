@@ -2095,7 +2095,6 @@ transition: transform .5s ease;
 
 /*juegossss*/
 .banner-juego-BG3 {
-  /* Es la imagen con el nombre del juego, me gustaba más como quedaba así que escribiendo el nombre. */
   height: 505px;
   display: flex;
   align-items: center;                     
@@ -2322,6 +2321,12 @@ transition: transform .5s ease;
   }
   .collapse.navbar-collapse.show {
       display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .logoWell {
+      display: none;
   }
 }
 
