@@ -2322,6 +2322,9 @@ transition: transform .5s ease;
   .navbar-nav .nav-item {
       margin-bottom: 10px;
   }
+  .logoWell {
+    display: none;
+  }
 }
 
 .listas-requisitos,
