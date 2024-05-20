@@ -1,2 +1,2 @@
-# Proyecto-p-gina-Piraat
+# Proyecto-pagina-Piraat
 Proyecto frontend CaC 
