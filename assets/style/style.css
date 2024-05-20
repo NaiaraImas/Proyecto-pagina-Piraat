@@ -2324,12 +2324,6 @@ transition: transform .5s ease;
   }
 }
 
-@media (max-width: 767px) {
-  .logoWell {
-      display: none;
-  }
-}
-
 .listas-requisitos,
 .listas,
 .contenedor-ifrem {
