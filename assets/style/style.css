@@ -2572,3 +2572,31 @@ transition: transform .5s ease;
   border: 2px solid #ddd;
   border-radius: 5px;
 }
+
+.user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+}
+
+.container.top-categories {
+  background-color: #000; /* Color de fondo negro */
+  color: #fff; /* Color del texto blanco (o el color deseado para el texto) */
+  padding: 20px; /* Ajuste el relleno según sea necesario */
+}
+
+/* Estilo cuando el textarea tiene foco o contenido */
+.user-box textarea:focus ~ label,
+.user-box textarea:valid ~ label,
+.user-box textarea:not(:placeholder-shown) ~ label {
+  top: -10px; /* Nueva posición arriba cuando tiene contenido */
+  left: 0;
+  color: #888; /* Color de texto de la etiqueta cuando está arriba */
+  font-size: 14px; /* Tamaño de fuente más pequeño cuando está arriba */
+}
