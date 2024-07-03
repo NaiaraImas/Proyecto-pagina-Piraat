@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/logo5.ico" type="image/x-icon">
+    <title>Agregar juego</title>
+</head>
+<body class="login-page">
+        <button id="buttonSession" class="backButton"><a class="" href="../../index.html">
+                <i class="bi bi-arrow-left-short"></i> Volver a Inicio
+            </a></button>
+    <!-- Formulario para editar un videojuego -->
+<main class="login-box">
+    <section class="container top-categories">
+        <h2 class="title-categories">Editar videojuego</h2>
+        <form id="formulario-videojuego">
+            <div class="user-box">
+                <input class="input2" type="text" id="nombre" name="nombre" required>
+                <label for="nombre">Nombre del juego</label>
+            </div>
+            <div class="user-box">
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+                <label for="descripcion">Descripción</label>
+            </div>
+            <div class="user-box">
+                <textarea id="precio" name="precio" rows="4" cols="50"></textarea>
+                <label for="precio">Precio</label>
+            </div>
+            <div class="user-box">
+                <textarea id="requisitosMinimos" name="requisitosMinimos" rows="4" cols="50"></textarea>
+                <label for="requisitosMinimos">Requisitos mínimos</label>
+            </div>
+            <div class="user-box">
+                <textarea id="requisitosRecomendados" name="requisitosRecomendados" rows="4" cols="50"></textarea>
+                <label for="requisitosRecomendados">Requisitos recomendados</label>
+            </div>
+            <div class="text-center">
+                <button type="button" onclick="editarVideojuego(id_del_videojuego_a_editar)">Guardar Cambios</button>
+            </div>
+        </form>
+    </section>
+</main>
+                 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../scripts/put.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -14,48 +14,40 @@
         <button id="buttonSession" class="backButton"><a class="" href="../../index.html">
                 <i class="bi bi-arrow-left-short"></i> Volver a Inicio
             </a></button>
-        <div class="login-box">
-            <form id="registerForm">
-                <div class="user-box">
-                    <input class="input2" type="text" placeholder="" id="lastName" required>
-                    <label for="firstName">Nombre del juego</label>
-                </div>
-                <div class="user-box">
-                    <input class="input2" type="text" placeholder="" id="lastName" required>
-                    <label for="lastName">Descripción</label>
-                </div>
-
-                <div class="user-box">
-                    <input class="input2" type="text" placeholder="" id="lastName" required>
-                    <label for="emailRegister">precio</label>
-                </div>
-                <div class="user-box">
-                    <input class="input2" type="text" placeholder="" id="lastName" required>
-                    <label for="passwordRegister">Reseñas</label>
-                </div>
-                <div class="user-box">
-                    <input class="input2" type="text" placeholder="" id="lastName" required>
-                    <label for="passwordRegister">Requisitos minimos</label>
-                </div>
-                <div class="user-box">
-                    <input class="input2" type="text" placeholder="" id="lastName" required>
-                    <label for="passwordRegister">Requisitos recomendados</label>
-                </div>
-                <div class="text-center">
-                    <a href="../pages/cargar-imagen.html" id="registerButton">
-                        Cargar imagen
-                        <span></span>
-                    </a>
-                </div>
-                <div class="text-center">
-                    <a href="../../index.html" id="toggleToLogin"><i class="bi bi-arrow-left fs-5"></i>Volver</a>
-                </div>
-            </form>
-        </div>
+            <main class="login-box">
+                <section class="container top-categories">
+                    <h2 class="title-categories">Crear nuevo videojuego</h2>
+                    <form id="formulario-videojuego">
+                        <div class="user-box">
+                            <input class="input2" type="text" id="nombre" name="nombre" required>
+                            <label for="nombre">Nombre del juego</label>
+                        </div>
+                        <div class="user-box">
+                            <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+                            <label for="descripcion">Descripción</label>
+                        </div>
+                        <div class="user-box">
+                            <textarea id="precio" name="precio" rows="4" cols="50"></textarea>
+                            <label for="precio">Precio</label>
+                        </div>
+                        <div class="user-box">
+                            <textarea id="requisitosMinimos" name="requisitosMinimos" rows="4" cols="50"></textarea>
+                            <label for="requisitosMinimos">Requisitos mínimos</label>
+                        </div>
+                        <div class="user-box">
+                            <textarea id="requisitosRecomendados" name="requisitosRecomendados" rows="4" cols="50"></textarea>
+                            <label for="requisitosRecomendados">Requisitos recomendados</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" onclick="crearNuevoVideojuego()">Crear Videojuego</button>
+                        </div>
+                    </form>
+                </section>
+            </main>                 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="../scripts/index.js"></script>
+<script src="../scripts/post.js"></script>
 <script>
     AOS.init();
 </script>
